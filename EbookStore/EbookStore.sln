@@ -3,6 +3,16 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29021.104
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ebook.Application", "Ebook.Application", "{6D59330E-DD75-4B49-AE10-424C3BF4365D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ebook.Domain", "Ebook.Domain", "{C34A7416-8349-4186-8705-26D4D76F1FF9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ebook.UI", "Ebook.UI", "{DA774BB5-5CFB-440A-8CC2-BE29D0A8D0D7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ebook.Infra.Data", "Ebook.Infra.Data", "{9F3FDA72-22CB-471A-95F3-AC9FFF4E4C90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ebook.Infra.IOC", "Ebook.Infra.IOC", "{BB7E90F1-7D44-4A47-B499-439036BD3E62}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
