@@ -7,6 +7,6 @@ namespace EbookApplication.interfaces
 {
     public interface IBookService
     {
-        IEnumerable<BookViewModel> GetBooks();
+        BookViewModel GetBooks();
     }
 }
