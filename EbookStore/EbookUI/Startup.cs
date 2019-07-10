@@ -14,6 +14,7 @@ using EbookUI.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using EbookInfraIOC;
+using EbookInfraData.Context;
 
 namespace EbookUI
 {
@@ -42,6 +43,12 @@ namespace EbookUI
             services.AddDefaultIdentity<IdentityUser>()
                 .AddDefaultUI(UIFramework.Bootstrap4)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+            services.AddDbContext<ebooklibraryDBcontext>(options =>
+            {
+                options.UseSqlServer(
+                   Configuration.GetConnectionString("ebookLibraryDBConnection"));
+            });
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             RegisterServices(services);
