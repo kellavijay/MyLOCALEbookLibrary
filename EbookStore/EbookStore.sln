@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbookInfraData", "EbookInfr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbookUI", "EbookUI\EbookUI.csproj", "{AA028245-F73A-40F2-8870-A8061285183C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbookApplication", "EbookApplication\EbookApplication.csproj", "{C850CF9F-D908-4FC3-9167-81E10623DA94}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{AA028245-F73A-40F2-8870-A8061285183C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA028245-F73A-40F2-8870-A8061285183C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA028245-F73A-40F2-8870-A8061285183C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C850CF9F-D908-4FC3-9167-81E10623DA94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C850CF9F-D908-4FC3-9167-81E10623DA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C850CF9F-D908-4FC3-9167-81E10623DA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C850CF9F-D908-4FC3-9167-81E10623DA94}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,6 +51,7 @@ Global
 		{7EAAA884-8556-44EC-A29D-C9D145483A11} = {C34A7416-8349-4186-8705-26D4D76F1FF9}
 		{FA50E3D3-0A7E-44F5-BE59-3546891EE604} = {9F3FDA72-22CB-471A-95F3-AC9FFF4E4C90}
 		{AA028245-F73A-40F2-8870-A8061285183C} = {DA774BB5-5CFB-440A-8CC2-BE29D0A8D0D7}
+		{C850CF9F-D908-4FC3-9167-81E10623DA94} = {6D59330E-DD75-4B49-AE10-424C3BF4365D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BFEF2638-C03B-4986-B4EB-8F61BFBA6D17}
