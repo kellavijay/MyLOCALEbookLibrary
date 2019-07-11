@@ -13,15 +13,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ebook.Infra.Data", "Ebook.I
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ebook.Infra.IOC", "Ebook.Infra.IOC", "{BB7E90F1-7D44-4A47-B499-439036BD3E62}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbookDomain", "EbookDomain\EbookDomain.csproj", "{7EAAA884-8556-44EC-A29D-C9D145483A11}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EbookDomain", "EbookDomain\EbookDomain.csproj", "{7EAAA884-8556-44EC-A29D-C9D145483A11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbookInfraData", "EbookInfraData\EbookInfraData.csproj", "{FA50E3D3-0A7E-44F5-BE59-3546891EE604}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EbookInfraData", "EbookInfraData\EbookInfraData.csproj", "{FA50E3D3-0A7E-44F5-BE59-3546891EE604}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbookUI", "EbookUI\EbookUI.csproj", "{AA028245-F73A-40F2-8870-A8061285183C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EbookUI", "EbookUI\EbookUI.csproj", "{AA028245-F73A-40F2-8870-A8061285183C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbookApplication", "EbookApplication\EbookApplication.csproj", "{C850CF9F-D908-4FC3-9167-81E10623DA94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EbookApplication", "EbookApplication\EbookApplication.csproj", "{C850CF9F-D908-4FC3-9167-81E10623DA94}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EbookInfraIOC", "EbookInfraIOC\EbookInfraIOC.csproj", "{8D6271CD-CBF9-4861-B77B-3046AF10666C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EbookInfraIOC", "EbookInfraIOC\EbookInfraIOC.csproj", "{8D6271CD-CBF9-4861-B77B-3046AF10666C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
