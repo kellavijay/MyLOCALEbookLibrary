@@ -1,56 +1,179 @@
-﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
-for details on configuring this project to bundle and minify static web assets. */
-
-a.navbar-brand {
-  white-space: normal;
-  text-align: center;
-  word-break: break-all;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  font-size: 14px;
-}
-@media (min-width: 768px) {
-  html {
-    font-size: 16px;
-  }
-}
-
-.border-top {
-  border-top: 1px solid #e5e5e5;
-}
-.border-bottom {
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.box-shadow {
-  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
-}
-
-button.accept-policy {
-  font-size: 1rem;
-  line-height: inherit;
-}
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-  position: relative;
-  min-height: 100%;
-}
-
+﻿/* Apply styles for Entire body start*/
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
+    font-size: 13px;
+    font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+/* Apply styles for Entire body End*/
+
+/* Top Header styles start*/
+
+.topheader a {
+    padding: 6px;
+    color: white;
+}
+
+.topheader span {
+    padding: 6px;
+    color: white;
+}
+
+/* Top Header styles End*/
+
+/* Carousel styles start*/
+
+.carousel-content {
+    position: fixed;
+    top: 30%;
+    left: 10%;
+}
+
+    .carousel-content div {
+        margin-bottom: 2%;
+    }
+
+.primary {
+    z-index: 5;
+    white-space: nowrap;
+    font-size: 30px;
+    color: rgba(0,0,0,1.00);
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    line-height: 40px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+}
+
+.secondary {
+    z-index: 6;
+    white-space: nowrap;
+    font-size: 60px;
+    color: rgb(36, 44, 66);
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    line-height: 60px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+    font-weight: 900;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+}
+
+
+.third {
+    z-index: 7;
+    white-space: nowrap;
+    font-size: 20px;
+    color: rgb(36, 44, 66);
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    line-height: 20px;
+    border-width: 0px;
+    margin: 0px;
+    padding: 0px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+    margin-left: 10px;
+}
+
+.btn-green {
+    margin-top: 5%;
+    background-color: #86bc42;
+    z-index: 8;
+    white-space: nowrap;
+    font-size: 15px;
+    color: rgba(255,255,255,1.00);
+    visibility: inherit;
+    transition: none 0s ease 0s;
+    line-height: 19px;
+    font-weight: 400;
+    outline: none;
+    box-shadow: none;
+    box-sizing: border-box;
+    cursor: pointer;
+    border-width: 0px;
+    margin: 0px;
+    padding: 12px 35px;
+    letter-spacing: 0px;
+    min-height: 0px;
+    min-width: 0px;
+    max-height: none;
+    max-width: none;
+    opacity: 1;
+    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    transform-origin: 50% 50% 0px;
+    border-color: rgba(0,0,0,1.00);
+    border-style: solid;
+    border-radius: 0px 0px 0px 0px;
+    text-align: left;
+    margin-left: 10px;
+}
+
+/* Carousel styles End*/
+
+/* Sticky footer styles start*/
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+    /*position: absolute;*/
+    bottom: 0;
+    background-color: #242c42;
+    padding: 2%;
+    padding-bottom:0% !important;
 }
+
+    .footer a {
+        color: #fff !important;
+    }
+
+    .footer span {
+        color: #fff !important;
+    }
+
+    .footer h3 {
+        color: #86bc42;
+        padding-bottom: 10px;
+        font-size: 16px;
+        text-align: left;
+    }
+
+.contact-item {
+    display: table;
+    border-top: 1px solid #2F374C;
+    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.gallerylist a {
+    padding: 5px 5px 0 0;
+    display: inline-block;
+    width: 21%;
+}
+
+.fa-angle-right, .fa-envelope-o, .fa-phone, .fa-map-marker, .fa-facebook, .fa-google-plus, .fa-twitter, .fa-dribbble, .fa-pinterest, .fa-instagram {
+    color: #86bc42;
+}
+/* Sticky footer styles End*/
