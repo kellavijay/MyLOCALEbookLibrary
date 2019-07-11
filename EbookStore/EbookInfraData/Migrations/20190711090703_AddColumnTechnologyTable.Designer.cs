@@ -3,14 +3,16 @@ using EbookInfraData.Context;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EbookInfraData.Migrations
 {
     [DbContext(typeof(ebooklibraryDBcontext))]
-    partial class ebooklibraryDBcontextModelSnapshot : ModelSnapshot
+    [Migration("20190711090703_AddColumnTechnologyTable")]
+    partial class AddColumnTechnologyTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EbookInfraData.Migrations
 {
     [DbContext(typeof(ebooklibraryDBcontext))]
-    [Migration("20190711034637_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20190711085442_AddRelationTable")]
+    partial class AddRelationTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -22,19 +22,44 @@ namespace EbookInfraData.Migrations
 
             modelBuilder.Entity("EbookDomain.Models.Book", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("BookId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("BookName");
 
                     b.Property<string>("Description");
 
                     b.Property<string>("ImageUrl");
 
-                    b.Property<string>("Name");
+                    b.Property<int>("TechnologyId");
 
-                    b.HasKey("Id");
+                    b.HasKey("BookId");
 
-                    b.ToTable("Books");
+                    b.HasIndex("TechnologyId");
+
+                    b.ToTable("Book");
+                });
+
+            modelBuilder.Entity("EbookDomain.Models.Technology", b =>
+                {
+                    b.Property<int>("TechnologyId")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("TechnologyName");
+
+                    b.HasKey("TechnologyId");
+
+                    b.ToTable("Technology");
+                });
+
+            modelBuilder.Entity("EbookDomain.Models.Book", b =>
+                {
+                    b.HasOne("EbookDomain.Models.Technology", "technology")
+                        .WithMany("Books")
+                        .HasForeignKey("TechnologyId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }
