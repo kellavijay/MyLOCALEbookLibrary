@@ -1,0 +1,14 @@
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\bin\Debug\netcoreapp2.2\EbookDomain.deps.json
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\bin\Debug\netcoreapp2.2\EbookDomain.runtimeconfig.json
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\bin\Debug\netcoreapp2.2\EbookDomain.runtimeconfig.dev.json
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\bin\Debug\netcoreapp2.2\EbookDomain.dll
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\bin\Debug\netcoreapp2.2\EbookDomain.pdb
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\obj\Debug\netcoreapp2.2\EbookDomain.csprojAssemblyReference.cache
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\obj\Debug\netcoreapp2.2\EbookDomain.csproj.CoreCompileInputs.cache
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\obj\Debug\netcoreapp2.2\EbookDomain.AssemblyInfoInputs.cache
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\obj\Debug\netcoreapp2.2\EbookDomain.AssemblyInfo.cs
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\obj\Debug\netcoreapp2.2\EbookDomain.dll
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\obj\Debug\netcoreapp2.2\EbookDomain.pdb
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.dll
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\bin\Debug\netcoreapp2.2\Microsoft.AspNetCore.Http.Features.xml
+E:\coreapps\Ebooklibrary\EbookStore\EbookDomain\obj\Debug\netcoreapp2.2\EbookDomain.csproj.CopyComplete
