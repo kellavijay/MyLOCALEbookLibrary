@@ -4,20 +4,20 @@
     ViewData["Title"] = "List of Books";
 }
 
-    <div class="row mt-2 ml-2">
+<div class="row">
 
-        @foreach (var item in Model)
-        {
-            var photoPath = (item.ImageUrl ?? "noimage.jpg");
+    @foreach (var item in Model)
+    {
+        var photoPath = (item.ImageUrl ?? "noimage.jpg");
 
-            <div class="card p-3">
-                <img class="card-img-top" src="@photoPath" asp-append-version="true" alt="Card image cap" max-height="150" max-width="150">
-                <div class="card-body text-center">
-                    <h5 class="card-title">@item.BookName</h5>
-                    <p class="card-text">@item.Description</p>
-                    <a asp-controller="Books" asp-action="Details" asp-route-id="@item.BookId" class="btn btn-primary m-1">View</a>
-                    <a asp-controller="Books" asp-action="Edit" asp-route-id="@item.BookId" class="btn btn-primary m-1">Edit</a>
-                </div>
+        <div class=" col-md-3 p-3 border">
+            <div class="text-center">
+                <img class="img-fluid" src="@photoPath" asp-append-version="true" alt="Card image cap" height="150" width="150"><hr />
+                <h5>@item.BookName</h5>
+                <p>@item.Description</p>
+                <a asp-controller="Books" asp-action="Details" asp-route-id="@item.BookId" class="btn btn-primary m-1">View</a>
+                <a asp-controller="Books" asp-action="Edit" asp-route-id="@item.BookId" class="btn btn-primary m-1">Edit</a>
             </div>
-        }
-    </div>
+        </div>
+    }
+</div>
