@@ -13,7 +13,7 @@ namespace EbookDomain.Models
         public string BookName { get; set; }
         public string Description { get; set; }
         public string ImageUrl { get; set; }
-        public List<IFormFile> Image { get; set; }
+        //public IFormFile Image { get; set; }
         public int TechnologyId { get; set; }
         public Technology technology { get; set; }
     }

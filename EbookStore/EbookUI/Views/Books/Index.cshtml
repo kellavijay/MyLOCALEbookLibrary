@@ -1,0 +1,23 @@
+﻿@model IEnumerable<EbookDomain.Models.Book>
+
+@{
+    ViewData["Title"] = "List of Books";
+}
+
+<div class="card-deck">
+
+    @foreach (var item in Model)
+    {
+        var photoPath = "~/images/" + (item.ImageUrl ?? "noimage.jpg");
+        <div class="card m-3" style="min-width:18rem;">
+            <div class="card-header">
+                <h3>@item.BookName</h3>
+            </div>
+            <img class="imageThumbnail" src="@photoPath" asp-append-version="true" />
+            <div class="card-footer text-center">
+                <a asp-controller="Books" asp-action="Details" asp-route-id="@item.BookId" class="btn btn-primary m-1">View</a>
+                <a asp-controller="Books" asp-action="Edit" asp-route-id="@item.BookId" class="btn btn-primary m-1">Edit</a>
+            </div>
+        </div>
+    }
+</div>
