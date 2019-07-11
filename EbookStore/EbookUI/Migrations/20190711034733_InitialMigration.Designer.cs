@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EbookUI.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20190710161018_IntialMigration")]
-    partial class IntialMigration
+    [Migration("20190711034733_InitialMigration")]
+    partial class InitialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
