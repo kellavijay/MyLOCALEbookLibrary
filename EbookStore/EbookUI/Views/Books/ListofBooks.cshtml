@@ -1,5 +1,29 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@model EbookDomain.Models.Book
+
 @{
+    ViewData["Title"] = "View Book Details";
+    var photoPath = "~/images/" + (Model.ImageUrl ?? "noimage.jpg");
+}
+
+<div class="row justify-content-center m-3">
+    <div class="col-sm-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.BookName</h1>
+            </div>
+            <div class="card-body text-center">
+                <img src="@photoPath" class="imageThumbnail" asp-append-version="true" />
+                <h4>Product Id: @Model.BookId</h4>
+                <h4>Description: @Model.Description</h4>                
+            </div>
+            <div class="card-footer text-center">
+                <a asp-controller="Books" asp-action="Index" class="btn btn-primary m-1">Back</a>
+                <a asp-controller="Products" asp-action="Edit" asp-route-id="@Model.BookId" class="btn btn-primary m-1">Edit</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/CustomScript.js"></script>
 }
